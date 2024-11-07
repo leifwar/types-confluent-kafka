@@ -365,8 +365,8 @@ class NewPartitions:
 
 class TopicPartition:
     topic: ClassVar[str]
-    partition: ClassVar[int]
-    offset: ClassVar[int]
+    partition: int
+    offset: int
     metadata: ClassVar[str | None]
     leader_epoch: ClassVar[int | None]
 
