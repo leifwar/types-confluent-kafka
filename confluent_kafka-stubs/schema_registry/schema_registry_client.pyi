@@ -31,7 +31,7 @@ class _RestClient:
         self,
         url: str,
         method: Literal["GET", "POST", "DELETE", "PUT"],
-        body: str | None = None,
+        body: str | dict | None = None,
         query: dict | None = None,
     ): ...
 
