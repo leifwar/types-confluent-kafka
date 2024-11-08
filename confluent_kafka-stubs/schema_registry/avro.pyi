@@ -26,6 +26,8 @@ class _ContextStringIO(BytesIO):
     def __exit__(self, *args): ...
 
 class AvroSerializer(Serializer):
+    _schema = Schema
+
     def __init__(
         self,
         schema_registry_client: SchemaRegistryClient,
